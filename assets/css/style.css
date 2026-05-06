@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)),
+    url('../img/bg.png') center/cover no-repeat fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+}
+
+/* --- FORM CONTAINERS --- */
+.login-container, .register-container, .verify-container {
+  text-align: center;
+}
+
+.login-box, .register-box, .verify-box {
+  background: rgba(30, 20, 10, 0.88);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 35px;
+  width: 370px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
+  /* Remove animation entirely */
+  transition: none !important;
+}
+
+.login-box:hover,
+.register-box:hover,
+.verify-box:hover {
+  /* Keep static look (no hover effect) */
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6) !important;
+  transform: none !important;
+}
+
+
+/* --- LOGO & TEXT --- */
+.logo {
+  width: 55px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+p {
+  font-size: 14px;
+  color: #bcbcbc;
+  margin-bottom: 20px;
+}
+
+/* --- INPUTS --- */
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+input:focus {
+  border-color: #ff8a00;
+  background: rgba(255, 255, 255, 0.12);
+  outline: none;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+/* --- BUTTONS --- */
+button {
+  width: 100%;
+  background: #ff8a00;
+  color: #111;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background: #ff9f33;
+  transform: scale(1.02);
+}
+
+/* --- ERRORS / LINKS --- */
+.error {
+  background: rgba(255, 60, 60, 0.15);
+  border-left: 3px solid #ff6b6b;
+  color: #ffb3b3;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 13px;
+}
+
+.register-text {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #ccc;
+}
+
+.register-text a {
+  color: #4aa3ff;
+  text-decoration: none;
+}
+
+.register-text a:hover {
+  color: #7bc4ff;
+}
+
+footer {
+  margin-top: 25px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+footer a {
+  color: #ff8a00;
+  text-decoration: none;
+}
+/* Back Arrow Icon (near logo, upper left) */
+.back-btn {
+  position: absolute;
+  top: 40px;  /* medyo tapat ng logo */
+  left: 80px; /* aligned sa logo area */
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffb347;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+  color: #ffa733;
+}
